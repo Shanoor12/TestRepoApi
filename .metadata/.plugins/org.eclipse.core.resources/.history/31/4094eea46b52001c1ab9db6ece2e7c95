@@ -1,0 +1,50 @@
+package advance;
+
+import java.util.List;
+
+import io.restassured.path.json.JsonPath;
+import util.ComplexJson;
+
+public class JSONValidationgroovy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String response= ComplexJson.GetStoreDetails();
+		JsonPath js= new JsonPath(response);
+		
+		
+		List<String> titles= js.getList("store.book.findAll{it.category=='fiction'}.title");
+		System.out.println(titles);
+		
+		String name =js.getString("store.book.find{it}.title");
+			
+				
+				//Sum of prices, min max price
+				
+				double totalprice= js.getDouble("store.book.price.sum()");
+				System.out.println(totalprice);
+				double minprice= js.getDouble("store.book.price.min()");
+				System.out.println(minprice);
+				double maxprice= js.getDouble("store.book.price.max()");
+				System.out.println(maxprice);
+				
+				//Details of book The lord of the ring
+				
+				String auther= js.getString("store.book.find{it.title=='The Lord of the Rings'}.auther");
+				System.out.println(auther);
+				
+				float price= js.getFloat("store.book.find{it.title=='The Lord of the Rings'}.price");
+				System.out.println(price);
+				
+				String category= js.getString("store.book.find{it.title=='The Lord of the Rings'}.category");
+						System.out.println(category);
+				
+				
+				
+		
+		
+
+	}
+
+}

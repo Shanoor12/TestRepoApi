@@ -1,0 +1,5 @@
+package frameworkfinal;
+
+public enum RequestType {
+
+}

@@ -1,0 +1,34 @@
+package stepdefinations;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import util.WebBrowser;
+
+public class YelpSearch 
+
+
+
+{
+	WebDriver driver;
+	@Given(" person is on yelp home page")
+	
+	public void  person_is_on_yelp_home_page()
+	{
+		 driver = WebBrowser.openBrowser("https://www.yelp.com/");
+	}
+	
+	@When("person searches for {string}")
+	
+	public void person_searches_for(String restuarant) 
+	{
+		driver.findElement(By.xpath("/html/body/yelp-react-root/div[1]/div[4]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/a")).sendKeys(restuarant);
+		driver.findElement(By.xpath("//*[@id=\"header-search-submit\"]/span/span[1]")).click();
+		
+	}
+	
+	
+
+}

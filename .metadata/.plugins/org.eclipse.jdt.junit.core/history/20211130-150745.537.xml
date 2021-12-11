@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="tests.TestRunner" time="15.473">
+    <testsuite name="Google Place Api" time="15.473">
+      <testcase name="Add Place" classname="Google Place Api" time="7.896"/>
+      <testcase name="Get Place" classname="Google Place Api" time="2.507"/>
+      <testcase name="Update Place" classname="Google Place Api" time="2.558"/>
+      <testcase name="Deletet Place" classname="Google Place Api" time="2.512"/>
+    </testsuite>
+  </testsuite>
+</testrun>

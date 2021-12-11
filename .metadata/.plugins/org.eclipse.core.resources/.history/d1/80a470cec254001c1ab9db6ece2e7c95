@@ -1,0 +1,16 @@
+package frameworkfinal;
+
+public class GenerateBookerData {
+	
+	
+	Bookingdates bkgdates= new Bookingdates();
+	
+	private String firstname ;
+	private String lastname;
+	private int totalprice;
+	private boolean depositpaid;
+	private String additionalneeds;
+	
+	
+
+}

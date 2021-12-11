@@ -1,0 +1,35 @@
+package stepdefinations;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import util.WebBrowser;
+
+public class Rediff_Reg 
+
+
+{
+	WebDriver driver;
+	@Given("User is on Rediff Registration page")
+	public void user_is_on_Rediff_Registration_page() {
+		driver = WebBrowser.openBrowser("http://register.rediff.com/register/register.php?FormName=user_details");
+	}
+	
+	@When("User enters {string} {string} and {string}")
+	public void user_enters_and(String name, String email, String password) {
+		driver.findElement(By.cssSelector("input[name^='name']")).sendKeys(name);
+		driver.findElement(By.cssSelector("input[name^='login']")).sendKeys(email);
+		driver.findElement(By.cssSelector("input[name^='passwd']")).sendKeys(password);
+		
+	}
+	
+	@Then("User is Registered successfully")
+	public void user_is_registered_successfully() {
+		System.out.println("Done");
+	}
+
+}

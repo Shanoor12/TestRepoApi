@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="1" ignored="0">
+  <testsuite name="tests.TestRunner" time="10.87">
+    <testsuite name="Employee" time="10.87">
+      <testcase name="CreateEmp" classname="Employee" time="8.488"/>
+      <testcase name="UpdateEmp" classname="Employee" time="1.01"/>
+      <testcase name="SingleUserEmp" classname="Employee" time="0.536">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.then()" because "this.response" is null&#13;
+	at stepdefinition.LibraryAPITest.in_the_response_is(LibraryAPITest.java:62)&#13;
+	at ✽."first_name" in the response is "Janet"(file:///D:/AN_Workspace/ApiTesting_Demo/src/test/resources/Features/Employee.feature:43)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="DeleteEmp" classname="Employee" time="0.835"/>
+    </testsuite>
+  </testsuite>
+</testrun>

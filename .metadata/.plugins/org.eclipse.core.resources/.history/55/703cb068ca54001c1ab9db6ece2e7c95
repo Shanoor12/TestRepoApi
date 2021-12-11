@@ -1,0 +1,21 @@
+package frameworkfinal;
+
+
+public class GenerateBooker {
+	
+	
+	
+	public static BookingDetails getObjbookingDetails(String firstname, String lastname, int totalprice,
+			boolean depositpaid,String additionalneeds)
+	{
+		Bookingdates bkgdates=new Bookingdates();
+		BookingDetails bkgdetails =new BookingDetails();
+		bkgdates.setFirstname(firstname);
+		
+		
+		
+	}
+	
+	
+
+}

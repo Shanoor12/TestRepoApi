@@ -1,0 +1,25 @@
+package advance;
+
+import static  io.restassured.RestAssured.*;
+import static  io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+
+public class SpecsDemo {
+	
+	public static void main(String[] args) {
+		
+		//Create a common spec which can be re-used by multiple requests
+		
+		RequestSpecification reqspec=new RequestSpecBuilder()
+				.setBaseUri(("https://rahulshettyacademy.com")
+				.setContentType(ContentType.JSON)
+				.addQueryparam("key","qaclick123")
+				.build();
+		
+	}
+
+}

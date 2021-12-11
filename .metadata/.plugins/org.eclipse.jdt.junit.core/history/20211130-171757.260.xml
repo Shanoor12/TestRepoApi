@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="tests.TestRunner" time="1.325">
+    <testsuite name="validate library Apis" time="1.325">
+      <testcase name="AddBook" classname="validate library Apis" time="1.225">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload1 for AddBook api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload1 for AddBook api")
+public void payload1_for_AddBook_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User1 calls Addbook api using http POST request")
+public void user1_calls_Addbook_api_using_http_POST_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status1 code is {int}")
+public void status1_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("id is fethced")
+public void id_is_fethced() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="GetBook" classname="validate library Apis" time="0.06">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload1 for GetBook api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload1 for GetBook api")
+public void payload1_for_GetBook_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User1 calls Getbook api using http GET request")
+public void user1_calls_Getbook_api_using_http_GET_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status1 code is {int}")
+public void status1_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="DeleteBook" classname="validate library Apis" time="0.038">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload1 for DeleteBook api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload1 for DeleteBook api")
+public void payload1_for_DeleteBook_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User1 calls Getbook api using http POST request")
+public void user1_calls_Getbook_api_using_http_POST_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status1 code is {int}")
+public void status1_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

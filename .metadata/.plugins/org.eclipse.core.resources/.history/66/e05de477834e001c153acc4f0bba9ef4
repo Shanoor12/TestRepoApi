@@ -1,0 +1,90 @@
+package Pom.practiceAutomation;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Practice.automationtesting.Cart;
+import Practice.automationtesting.Payment;
+import Practice.automationtesting.Shop;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageextensions.RediffLogin;
+import pageextensions.RediffRegistration;
+
+
+public class practiceAutomationPOM {
+	
+	Shop home;
+	Cart addcart;
+	Payment checkout;
+	
+	WebElement driver;
+	@Before
+	public void setUp()
+	{
+		System.setProperty("webdriver.chrome.driver", "lib//chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		//Create Page Objects
+		home = new Shop(driver);
+		addcart = new Cart(driver);
+		checkout =new Payment(driver);
+	}
+	
+	
+	
+	@Given("User3 is on practice automation page")
+	public void user3_is_on_practice_automation_page() {
+	    
+	}
+
+	@When("User3 clicks on addtocart")
+	public void user3_clicks_on_addtocart() {
+	    
+	}
+
+	@When("User3 clicks on view details")
+	public void user3_clicks_on_view_details() {
+	    
+	}
+
+	@Then("The product will add to cart")
+	public void the_product_will_add_to_cart() {
+	    
+	}
+
+	@Given("User3 is on cart page")
+	public void user3_is_on_cart_page() {
+	    
+	}
+
+	@When("User3 click on Increase quantity and click on update button")
+	public void user3_click_on_Increase_quantity_and_click_on_update_button() {
+	    
+	}
+
+	@When("clicks on proceed to checout button")
+	public void clicks_on_proceed_to_checout_button() {
+	    
+	}
+
+	@Then("User3 proceed to payment page")
+	public void user3_proceed_to_payment_page() {
+	    
+	}
+
+	@Given("User3 is on payment page")
+	public void user3_is_on_payment_page() {
+	    
+	}
+
+	@When("User enters registration data")
+	public void user_enters_registration_data(io.cucumber.datatable.DataTable dataTable) {
+	    
+	}
+	
+	
+
+}

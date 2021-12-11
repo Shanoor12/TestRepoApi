@@ -1,0 +1,12 @@
+package advance;
+
+import pojo.Location;
+
+public class GoogleApiPOJO {
+	
+	public static void main(String[] args) {
+		
+		Location loc =new Location();
+	}
+
+}

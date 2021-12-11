@@ -1,0 +1,24 @@
+package advance;
+
+import java.util.List;
+
+import io.restassured.path.json.JsonPath;
+import util.ComplexJson;
+
+public class JSONValidationgroovy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String response= ComplexJson.GetStoreDetails();
+		JsonPath js= new JsonPath(response);
+		
+		
+		List<String> titles= js.getList("store.book.findAll{it.category=='fiction'}.title");
+		System.out.println(titles);
+		
+		
+
+	}
+
+}

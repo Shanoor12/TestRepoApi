@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="tests.TestRunner" time="1.415">
+    <testsuite name="Employee" time="1.415">
+      <testcase name="CreateEmp" classname="Employee" time="1.265">
+        <error>io.cucumber.junit.UndefinedStepException: The step ""name" in the response is like "morpheus"" is undefined. You can implement it using the snippet(s) below:
+
+@Then("{string} in the response is like {string}")
+public void in_the_response_is_like(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="UpdateEmp" classname="Employee" time="0.063">
+        <error>io.cucumber.junit.UndefinedStepException: The step ""job" in the response is like "zion resident"" is undefined. You can implement it using the snippet(s) below:
+
+@Then("{string} in the response is like {string}")
+public void in_the_response_is_like(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="ListUsersEmp" classname="Employee" time="0.036">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="DeleteEmp" classname="Employee" time="0.05">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

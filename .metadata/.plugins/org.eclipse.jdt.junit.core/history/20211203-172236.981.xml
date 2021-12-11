@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="5" started="5" failures="1" errors="0" ignored="0">
+  <testsuite name="tests.TestRunner" time="14.644">
+    <testsuite name="Google Place API" time="14.644">
+      <testcase name="Add Place" classname="Google Place API" time="8.642"/>
+      <testcase name="Get Place" classname="Google Place API" time="2.375">
+        <failure>java.lang.AssertionError: expected [Frontline house] but found [name]&#13;
+	at org.testng.Assert.fail(Assert.java:99)&#13;
+	at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)&#13;
+	at org.testng.Assert.assertEquals(Assert.java:122)&#13;
+	at org.testng.Assert.assertEquals(Assert.java:629)&#13;
+	at org.testng.Assert.assertEquals(Assert.java:639)&#13;
+	at framework.Googlefeature.in_response_is(Googlefeature.java:91)&#13;
+	at ✽."name" in response is "Frontline house"(file:///D:/AN_Workspace/ApiTesting_Demo/src/test/resources/Features/Google.feature:42)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Update Place" classname="Google Place API" time="2.602"/>
+      <testcase name="Add Place with Data" classname="Google Place API" time="0.287"/>
+      <testcase name="Add Place with Data" classname="Google Place API" time="0.738"/>
+    </testsuite>
+  </testsuite>
+</testrun>

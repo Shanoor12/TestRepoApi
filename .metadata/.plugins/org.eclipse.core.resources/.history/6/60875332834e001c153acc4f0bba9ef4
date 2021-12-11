@@ -1,0 +1,36 @@
+package Practice.automationtesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Shop {
+	
+	//Variable declaration
+			@CacheLookup @FindBy(linkText ="Add to basket")
+			WebElement addtobsk; 
+			@CacheLookup @FindBy(className ="added_to_cart wc-forward")
+			WebElement viewdtl;
+			
+			
+			//Constructor
+			public Shop(WebDriver driver)
+			{
+				PageFactory.initElements(driver, this);
+			}
+			
+			//Methods
+			public void HomePage(String username, String password)
+			{
+				addtobsk.click();
+				viewdtl.click();
+			}
+			
+			public void navigateCartPage()
+			{
+				viewdtl.click();
+			}
+
+}

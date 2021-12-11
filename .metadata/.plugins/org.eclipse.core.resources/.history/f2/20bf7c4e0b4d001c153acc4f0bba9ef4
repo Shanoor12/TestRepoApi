@@ -1,0 +1,12 @@
+package stepdefinations;
+
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class AmazonSearch {
+	
+	
+	RemoteWebDriver driver;
+	@Given("User is on A")
+	
+
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="4" ignored="0">
+  <testsuite name="tests.TestRunner" time="0.969">
+    <testsuite name="Google Place Api" time="0.969">
+      <testcase name="Add Place" classname="Google Place Api" time="0.878">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Add Place api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Add Place api")
+public void payload_for_Add_Place_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Add Place api using http POST request")
+public void user_calls_Add_Place_api_using_http_POST_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status code is {int}")
+public void status_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in response is {string}")
+public void in_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("placeid is fetched")
+public void placeid_is_fetched() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Get Place" classname="Google Place Api" time="0.023">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Get place api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Get place api")
+public void payload_for_Get_place_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Get Place api using http GET request")
+public void user_calls_Get_Place_api_using_http_GET_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status code is {int}")
+public void status_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in response is {string}")
+public void in_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Update Place" classname="Google Place Api" time="0.019">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Update place api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Update place api")
+public void payload_for_Update_place_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Get Place api using http PUT request")
+public void user_calls_Get_Place_api_using_http_PUT_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status code is {int}")
+public void status_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in response is {string}")
+public void in_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Deletet Place" classname="Google Place Api" time="0.04">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Delete place api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Delete place api")
+public void payload_for_Delete_place_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Get Place api using http DELETE request")
+public void user_calls_Get_Place_api_using_http_DELETE_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status code is {int}")
+public void status_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{string} in response is {string}")
+public void in_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

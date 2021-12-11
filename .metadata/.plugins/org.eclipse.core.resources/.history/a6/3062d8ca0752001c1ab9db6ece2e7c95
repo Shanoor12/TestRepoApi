@@ -1,0 +1,44 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+
+@tag
+Feature: validate library Apis
+  I want to use this template for my feature file
+  
+  @tag1
+  Scenario: AddBook 
+  Given Payload1 for AddBook api 
+  When User1 calls Addbook api using http POST request
+  Then Status1 code is 200
+	And  "Msg" in the response is "successfully added"
+	And id is fethced
+	
+	@tag1
+	Scenario: GetBook
+	Given Payload1 for GetBook api
+	When User1 calls Getbook api using http GET request
+	Then Status1 code is 200
+	And  "author" in the response is "John foe"
+	
+	@tag1
+	Scenario: DeleteBook
+	Given Payload1 for DeleteBook api
+	When User1 calls DeleteBook api using http POST request
+	Then Status1 code is 200
+	And  "msg" in the response is "book is successfully deleted"

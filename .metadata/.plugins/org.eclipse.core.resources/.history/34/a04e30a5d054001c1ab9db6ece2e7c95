@@ -1,0 +1,42 @@
+package frameworkfinal;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Booker {
+	
+	@Given("Payload for Add Booking api with")
+	public void payload_for_Add_Booking_api_with(io.cucumber.datatable.DataTable dataTable) {
+	    
+	}
+
+	@When("User calls {string} api using http {string} request")
+	public void user_calls_api_using_http_request(String string, String string2) {
+	   
+	}
+
+	@Then("Status code is {int}")
+	public void status_code_is(Integer int1) {
+	    
+	}
+
+	@Then("{string} in response is {string}")
+	public void in_response_is(String string, String string2) {
+	    
+	}
+
+	@Given("Payload for Get Booking By Id api")
+	public void payload_for_Get_Booking_By_Id_api() {
+	    
+	}
+
+	@Given("Payload for Update Booking api")
+	public void payload_for_Update_Booking_api() {
+	   
+	}
+
+
+
+
+}

@@ -1,0 +1,13 @@
+package advance;
+
+
+
+public class GoogleApiPOJO {
+	
+	public static void main(String[] args) {
+		
+		pojoclasses.Location loc =new Location();
+		loc.setLat(-38.383494);
+	}
+
+}

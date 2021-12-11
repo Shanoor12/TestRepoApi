@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="4" ignored="0">
+  <testsuite name="tests.TestRunner" time="1.101">
+    <testsuite name="Employee" time="1.101">
+      <testcase name="Create" classname="Employee" time="0.933">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Create api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Create api")
+public void payload_for_Create_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Create api using http POST request")
+public void user_calls_Create_api_using_http_POST_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status2 code is {int}")
+public void status2_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Update" classname="Employee" time="0.058">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for Update api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for Update api")
+public void payload_for_Update_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls Update api using http PUT request")
+public void user_calls_Update_api_using_http_PUT_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status2 code is {int}")
+public void status2_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="ListUsers" classname="Employee" time="0.066">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for ListUsers api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for ListUsers api")
+public void payload_for_ListUsers_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls ListUser api using http GET request")
+public void user_calls_ListUser_api_using_http_GET_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status2 code is {int}")
+public void status2_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="DeleteE" classname="Employee" time="0.041">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for DeleteE api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for DeleteE api")
+public void payload_for_DeleteE_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls DeleteE api using http DELETE request")
+public void user_calls_DeleteE_api_using_http_DELETE_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Status2 code is {int}")
+public void status2_code_is(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

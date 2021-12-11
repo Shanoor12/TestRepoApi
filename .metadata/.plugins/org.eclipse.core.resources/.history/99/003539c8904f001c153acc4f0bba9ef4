@@ -1,0 +1,41 @@
+package Practice.automationtesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Cart {
+	
+	
+	//Variable declaration
+	@CacheLookup @FindBy(css  ="input[type='number']")
+	WebElement qty; 
+	@CacheLookup @FindBy(css ="input[type='submit']")
+	WebElement btn;
+	@CacheLookup @FindBy(partialLinkText  ="Proceed to Checkout")
+	WebElement chkout;
+	
+	
+	
+	//Constructor
+	public Cart(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	//Methods
+	public void CartPage()
+	{
+		qty.click();
+		btn.click();
+		chkout.click();
+	}
+	
+	public void navigateCartPage()
+	{
+		chkout.click();
+	}
+
+}

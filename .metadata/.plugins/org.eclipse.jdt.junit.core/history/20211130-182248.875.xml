@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="1" ignored="0">
+  <testsuite name="tests.TestRunner" time="0.879">
+    <testsuite name="Employee" time="0.879">
+      <testcase name="CreateEmp" classname="Employee" time="0.68">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="UpdateEmp" classname="Employee" time="0.052">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="SingleUserEmp" classname="Employee" time="0.106">
+        <error>io.cucumber.junit.UndefinedStepException: The step "Payload for SingleUserEmp api" is undefined. You can implement it using the snippet(s) below:
+
+@Given("Payload for SingleUserEmp api")
+public void payload_for_SingleUserEmp_api() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("User calls SingleUserEmp api using http GET request")
+public void user_calls_SingleUserEmp_api_using_http_GET_request() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="DeleteEmp" classname="Employee" time="0.039">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

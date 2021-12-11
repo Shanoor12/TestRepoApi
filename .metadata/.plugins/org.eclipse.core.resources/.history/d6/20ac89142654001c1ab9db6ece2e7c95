@@ -1,0 +1,79 @@
+package framework;
+
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+
+public class Googlefeature {
+	
+	RequestSpecification reqspec;
+	ResponseSpecBuilder resspec;
+	Response response;
+	String res;
+	JsonPath js;
+	
+	@Before
+	
+	public void CreateSpecs()
+	{
+		RestAssured.useRelaxedHTTPSValidation();
+		reqspec =Specifications.getRequestSpec();
+	}
+	
+	
+	@Given("Payload for Add Place api with")
+	public void payload_for_Add_Place_api_with(io.cucumber.datatable.DataTable dataTable) {
+		
+	    
+	}
+
+	@When("User calls {string} api using http {string} request")
+	public void user_calls_api_using_http_request(String resource, String httpmethod) {
+	   
+	}
+
+	@Then("Status code is {int}")
+	public void status_code_is(Integer int1) {
+	    
+	}
+
+	@Then("{string} in response is {string}")
+	public void in_response_is(String string, String string2) {
+	    
+	}
+
+	@Then("placeid is fetched")
+	public void placeid_is_fetched() {
+	    
+	}
+
+	@Given("Payload for Get place api")
+	public void payload_for_Get_place_api() {
+	    
+	}
+
+	@When("User calls {string} api using http \"GE\"T request")
+	public void user_calls_api_using_http_GE_T_request(String string) {
+	    
+	}
+
+	@Given("Payload for Update place api")
+	public void payload_for_Update_place_api() {
+	    
+	}
+
+	@Given("Payload for Add Place api with {string}, {string}, {string}")
+	public void payload_for_Add_Place_api_with(String string, String string2, String string3) {
+	   
+	}
+
+
+
+
+}

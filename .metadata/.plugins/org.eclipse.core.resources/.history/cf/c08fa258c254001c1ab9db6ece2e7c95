@@ -1,0 +1,16 @@
+package frameworkfinal;
+
+public class BookingDetails {
+	
+	
+	Bookingdates bkgdates= new Bookingdates();
+	
+	private firstname
+	private
+	private
+	private
+	private
+	private
+	private
+
+}

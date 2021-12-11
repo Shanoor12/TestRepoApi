@@ -1,0 +1,52 @@
+package advance;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import io.restassured.path.json.JsonPath;
+import util.ComplexJson;
+
+public class JSONValidationjson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Double price=0.0;
+		String response= ComplexJson.GetStoreDetails();
+		JsonPath js= new JsonPath(response);
+		
+		List<String> titles= new  ArrayList<String>();
+		
+		//Book titles with category fiction
+		
+		int cnt = js.getInt("store.book.size()");
+		
+		for(int i=0; i<cnt; i++)
+		{
+			if(js.getString("store.book["+i+"].category").equals("fiction"))
+			{
+				titles.add(js.getString("store.book["+i+"].title"));
+			}
+			System.out.println(titles);
+		}
+		
+		//price
+		for(int i=0;i<cnt;i++)
+		{
+			price=js.getDouble("store.book["+i+"].price");
+		}
+		System.out.println(price);
+		
+		//Details of book with title the lord of the Rings
+		for(int i=0; i<cnt; i++)
+		{
+			if(js.getString("store.book["+i+"].title").equals("the lord of the Rings"))
+			{
+				System.out.println(js.getString("srore.book["+i+"].author"));
+				System.out.println(js.getString("srore.book["+i+"].price"));
+				System.out.println(js.getString("srore.book["+i+"].category"));
+			}
+		}
+		
+		
+	}
+}

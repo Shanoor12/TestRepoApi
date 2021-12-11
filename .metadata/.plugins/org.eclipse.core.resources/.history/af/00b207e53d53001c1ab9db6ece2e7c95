@@ -1,0 +1,56 @@
+package advance;
+
+import static  io.restassured.RestAssured.*;
+import static  io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import static org.testng.Assert.assertEquals;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import util.Commons;
+import util.Payload;
+
+public class EmployeeSpec {
+
+	public static void main(String[] args) {
+		
+		//Create a common spec which can be re-used by multiple requests
+		
+				RequestSpecification reqspec=new RequestSpecBuilder()
+						.setBaseUri("https://reqres.in/api")
+						.setContentType(ContentType.JSON)
+//						.addQueryParam("page","2")
+//						.addPathParam("id", 1)
+						.build();
+				
+				//Create Response specs
+				
+				ResponseSpecification resspec= new ResponseSpecBuilder()
+						.expectStatusCode(200)
+						.expectContentType(ContentType.JSON).build();
+				
+				//create employee
+				
+				//send the spec in the req
+				
+				String response =given().log().all().spec(reqspec).body("{\r\n"
+						+ "    \"email\": \"eve.holt@reqres.in\",\r\n"
+						+ "    \"password\": \"pistol\"\r\n"
+						+ "}")
+								.when().post("/api/register")
+								.then().log().all().extract().asString();
+								assertEquals(Commons.getJSON(response, "id"), "4");
+								
+								String token=Commons.getJSON(response, "token");
+								
+								
+		
+		
+		
+
+	}
+
+}

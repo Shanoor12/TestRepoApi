@@ -1,0 +1,125 @@
+package Practice.automationtesting;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Shop {
+	
+	//Variable declaration
+			//Shop
+	
+			@CacheLookup @FindBy(xpath  ="//*[@id=\"content\"]/ul/li[1]/a[1]/img")
+			WebElement clkitem; 
+			@CacheLookup @FindBy(css  = "button[type='submit']")
+			WebElement addtobsk;
+			@CacheLookup @FindBy(xpath  ="//*[@id=\"content\"]/div[1]/a")
+			WebElement viewdtl;
+			
+			//Cart
+			
+			@FindBy(name  ="cart[3636638817772e42b59d74cff571fbb3][qty]")
+			WebElement qty; 
+			@FindBy(css ="input[type='submit']")
+			WebElement btn;
+			@FindBy(xpath   ="//*[@id=\"page-34\"]/div/div[1]/div/div/div/a")
+			WebElement chkout;
+			
+			//Payment
+			
+			@FindBy(id ="billing_first_name")
+			WebElement fstname; 
+			@FindBy(id ="billing_last_name")
+			WebElement lstname;
+			@FindBy(id  ="billing_company")
+			WebElement blgcmpn;
+			@FindBy(id  ="billing_email")
+			WebElement blgemail;
+			@FindBy(id  ="billing_phone")
+			WebElement blgphn;
+			@FindBy(id  ="billing_city_field")
+			WebElement blgcountry;
+			@FindBy(id="billing_address_1")
+			WebElement blgadd1;
+			@FindBy(id="billing_city")
+			WebElement blgcity;
+			@FindBy(id="select2-chosen-2")
+			WebElement blgstate;
+			@FindBy(id="billing_postcode")
+			WebElement blgpostcode;
+			@FindBy(id="place_order")
+			WebElement plcorder;
+			
+			
+			//Constructor
+			public Shop(WebDriver driver)
+			{
+				PageFactory.initElements(driver, this);
+			}
+			
+			//Methods
+			public void HomePage()
+			
+			{
+				//Shop
+				
+				clkitem.click();
+				addtobsk.click();
+				
+//				WebDriver driver = null;
+//				WebDriverWait wait = new WebDriverWait(driver, 20);
+//				addtobsk= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='View Basket']")));
+				
+				viewdtl.click();
+			}
+				
+			
+			public void navigateCartPage()
+				{
+					viewdtl.click();
+				}
+			
+			//CArt
+			public void CartPage()
+			{
+				qty.clear();
+				qty.sendKeys("2");
+				btn.click();
+				chkout.click();
+			}
+			
+			//Payment
+			
+			public void PaymentPage(String fistname, String lastname, 
+					String company,String email ,String phonenumber, String country, String Address1 ,String city, String state, String postcode)
+			{
+				fstname.sendKeys(fistname);
+				lstname.sendKeys(lastname);
+				blgcmpn.sendKeys(company);
+				blgemail.sendKeys(email);
+				blgphn.sendKeys(phonenumber);
+				
+				Select dd = new Select(blgcountry);
+				dd.selectByVisibleText(country);
+				
+				blgadd1.sendKeys(Address1);
+				blgcity.sendKeys(city);
+				
+				Select dd1 = new Select(blgstate);
+				dd1.selectByVisibleText(state);
+				
+				blgpostcode.sendKeys(postcode);
+				
+			
+				
+			}
+			
+			
+
+}

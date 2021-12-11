@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="tests.TestRunner" time="0.84">
+    <testsuite name="Employee" time="0.84">
+      <testcase name="CreateEmp" classname="Employee" time="0.646">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="UpdateEmp" classname="Employee" time="0.118">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="SingleUserEmp" classname="Employee" time="0.042">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="DeleteEmp" classname="Employee" time="0.031">
+        <skipped>io.cucumber.junit.SkippedThrowable: This scenario is skipped&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="ApiTesting_Demo" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="tests.TestRunner" time="0.826">
+    <testsuite name="validate library Apis" time="0.826">
+      <testcase name="AddBook" classname="validate library Apis" time="0.71">
+        <error>io.cucumber.junit.UndefinedStepException: The step ""Msg" in the response is "successfully added"" is undefined. You can implement it using the snippet(s) below:
+
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="GetBook" classname="validate library Apis" time="0.08">
+        <error>io.cucumber.junit.UndefinedStepException: The step ""book_name" in the response is "Selenium automation using Java"" is undefined. You can implement it using the snippet(s) below:
+
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="DeleteBook" classname="validate library Apis" time="0.034">
+        <error>io.cucumber.junit.UndefinedStepException: The step ""msg" in the response is "book is successfully deleted”"" is undefined. You can implement it using the snippet(s) below:
+
+@Then("{string} in the response is {string}")
+public void in_the_response_is(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
